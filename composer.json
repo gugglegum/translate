@@ -1,0 +1,21 @@
+{
+  "name": "gugglegum/translate",
+  "description": "Simple but yet powerful localization for your application",
+  "type": "library",
+  "keywords": ["internationalization", "localization", "i18n", "l10n", "translate", "intl"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paul Melekhov",
+      "email": "gugglegum@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "gugglegum\\I18n\\Translate\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  }
+}
