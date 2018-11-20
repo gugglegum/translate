@@ -9,7 +9,7 @@ namespace gugglegum\I18n\Translate;
  */
 abstract class Translate
 {
-    public static $language;
+    protected static $language;
 
     /**
      * Returns current language
