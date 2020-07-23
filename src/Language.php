@@ -21,7 +21,9 @@ abstract class Language
     public static function __callStatic($name, $arguments)
     {
         $class = get_called_class();
-        if (property_exists($class, $name)) {
+        if (method_exists($class, $name)) {
+            return call_user_func_array([$class, $name], $arguments);
+        } elseif (property_exists($class, $name)) {
             if (array_key_exists(0, $arguments)) {
                 return self::replaceMacro($class::$$name, $arguments[0]);
             } else {
