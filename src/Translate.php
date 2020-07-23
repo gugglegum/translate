@@ -56,6 +56,6 @@ abstract class Translate
     {
         $class = get_called_class();
         $pos = strrpos($class, '\\');
-        return substr_replace($class, '\\' . ucfirst(strtoupper(self::getLanguage())), $pos, 0);
+        return substr_replace($class, '\\' . ucfirst(strtolower(self::getLanguage())), $pos, 0);
     }
 }
