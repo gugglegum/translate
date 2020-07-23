@@ -24,7 +24,7 @@ class EnglishLanguage extends Language
      * @param string $many
      * @return string
      */
-    protected function plural(int $number, string $one, string $many): string
+    public static function plural(int $number, string $one, string $many): string
     {
         return $number === 1 ? $one : $many;
     }

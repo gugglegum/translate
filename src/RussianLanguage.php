@@ -34,7 +34,7 @@ class RussianLanguage extends Language
      * @param string $five
      * @return string
      */
-    protected function plural(int $number, string $one, string $two, string $five): string
+    public static function plural(int $number, string $one, string $two, string $five): string
     {
         if (($number - $number % 10) % 100 != 10) {
             if ($number % 10 == 1) {
